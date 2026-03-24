@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #f1f1f1;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+form {
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+}
+h1 small {
+    font-size: 12px;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    letter-spacing: 0rem;
+}
+input {
+    border: none;
+    cursor: pointer;
+}
+a {
+    color: #3ab0cf;
+    text-decoration: none;
+}
+.header {
+    background: #3ab0cf;
+    color: #fff;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100%;
+}
+.login-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.login-user a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    padding: 10px 40px;
+    border-radius: 1000px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.login-user input {
+    background: none;
+    box-shadow: none;
+    color: #333;
+}
+
+.main {
+    display: flex;
+    padding-top: 70px;
+}
+.sidebar {
+    width: 300px;
+    height: calc(100vh - 70px);
+    background: #333;
+    padding: 20px;
+    color: #fff;
+}
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 16px;
+    border-left: 3px solid gray;
+    padding-left: 10px;
+    color: gray;
+}
+.menu-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+.contents {
+    background: #fff;
+    margin: 20px 30px;
+    width: 100%;
+    padding: 20px 40px;
+}
+.contents h2 {
+    color: #3ab0cf;
+}
+.contents h2::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #3ab0cf;
+    display: block;
+    margin-top: 10px;
+}
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+th {
+    color: #114c81;
+}
+tr {
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+thead tr {
+    border-bottom: 3px solid rgb(228, 228, 228);
+}
+.action {
+    display: flex;
+    gap: 12px;
+}
+.tbl-btn {
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.tbl-btn.edit {
+    background: #3ab0cf;
+    color: #fff;
+}
+.tbl-btn.delete {
+    background: #cf3a3a;
+    color: #fff;
+}
+.tbl-stock-btn {
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+.input-border {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: auto;
+}
+.search-btn {
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: #3ab0cf;
+    color: #fff;
+}
